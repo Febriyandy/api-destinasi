@@ -11,7 +11,7 @@ import { verifyToken } from "../middleware/VerifyToken.js";
 import { refreshToken } from "../controllers/RefreshToken.js";
 const router = express.Router();
 
-router.get('/users',verifyToken, getUser);
+router.get('/users', getUser);
 router.get('/users/:id', verifyToken, getUserById);
 router.post('/register', createUser);
 router.patch('/users/:id',verifyToken, updateUser);
