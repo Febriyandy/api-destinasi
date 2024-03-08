@@ -42,5 +42,5 @@ app.use(PaketRoute);
 app.use(TransaksiRoute);
 
 app.listen(PORT, ()=> {
-    console.log('Server up and running in port ${PORT}...');
+    console.log(`Server up and running in port ${PORT}...`);
 });
