@@ -1,0 +1,28 @@
+POST http://localhost:7000/users
+Content-Type: application/json
+
+{
+    "nama": "Andi Karmila Lestari",
+    "email": "karmila17@gmail.com",
+    "password": "Karmila",
+    "confPassword": "Karmila"
+}
+
+###
+GET http://localhost:7000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWEiOiJGZWJyaWFuZGkiLCJlbWFpbCI6ImZlYnJpYW5kaUBnbWFpbC5jb20iLCJpYXQiOjE3MDQ2MTIzOTMsImV4cCI6MTcwNDYxMjQxM30.C3uZ1YI6z3qLF_tjpHEsxroPCJHxgmOt8KtHtnmq0Dw
+
+###
+POST http://localhost:7000/login
+Content-Type: application/json
+
+{
+    "email": "karmila17@gmail.com",
+    "password": "Karmila" 
+}
+
+###
+GET http://localhost:7000/token
+
+###
+DELETE http://localhost:7000/logout
