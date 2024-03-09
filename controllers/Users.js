@@ -4,6 +4,10 @@ import jwt from "jsonwebtoken";
 import fs from "fs";
 import path from "path";
 
+export const Home = async(req, res) => {
+    res.send('Welcome to destinasyik server!');
+}
+
 export const getUser = async(req, res) =>{
     try {
         const response = await Users.findAll({
