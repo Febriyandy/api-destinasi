@@ -17,7 +17,6 @@ import Profil from "./models/transaksiModel.js";
 dotenv.config();
 const app = express();
 const PORT = process.env.APP_PORT || 3000;
-const server_host = process.env.YOUR_HOST || '0.0.0.0';
 
 try {
     await db.authenticate();
@@ -43,6 +42,6 @@ app.use(PaketRoute);
 app.use(TransaksiRoute);
 
 
-app.listen(PORT, server_host, ()=> {
+app.listen(PORT, "0.0.0.0", function ()=> {
     console.log(`Server up and running in port ${PORT}...`);
 });
