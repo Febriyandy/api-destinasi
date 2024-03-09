@@ -42,6 +42,6 @@ app.use(PaketRoute);
 app.use(TransaksiRoute);
 
 
-app.listen(PORT, "0.0.0.0", function ()=> {
+app.listen(PORT, "0.0.0.0", ()=> {
     console.log(`Server up and running in port ${PORT}...`);
 });
